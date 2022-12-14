@@ -1,0 +1,436 @@
+.main {
+   display: flex;
+   &__control-panel {
+   }
+
+   &__card {
+   }
+
+   &__diagram {
+   }
+
+   &__statistics {
+   }
+
+   &__wrapper {
+      width: 936px;
+      display: grid;
+      grid-template-columns: 646px 270px;
+      grid-template-rows: 372px 236px;
+      column-gap: 20px;
+      row-gap: 17px;
+   }
+
+}
+.control-panel {
+   min-width: 234px;
+   min-height: 574px;
+
+   &__wrapper {
+      padding: 16px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background: #F0F0F0;
+      border-radius: 15px;
+
+      position: relative;
+
+      &::before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         background-color: #000000;
+         top: 509px;
+         left: 0px;
+         opacity: 0.1;
+      }
+   }
+   &__title {
+      padding: 20px 38px 19px 69px;
+      background: #FFFFFF;
+      border-radius: 15px;
+
+      color: #EF5DA8;
+
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/manage.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 16px;
+         height: 18px;
+         top: 20px;
+         left: 40px;
+      }
+   }
+
+   &__items {
+      margin: 22px 0px 37px 0px;
+      position: relative;
+      left: 20px;
+
+      &>*:not(:last-child){
+         margin: 0px 0px 40px 0px;
+      }
+
+   }
+
+   &__item {
+      cursor: pointer;
+      &:hover {
+         color: #5D5FEF;
+         transition: none;
+      }
+   }
+
+   &__portfolio {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/portfolio.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 21px;
+         height: 21px;
+         top: -1px;
+         left: -32px;
+      }
+   }
+
+   &__awards {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/star.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 21px;
+         height: 21px;
+         top: -1px;
+         left: -32px;
+      }
+   }
+
+   &__favorite {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/favorite.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 20px;
+         height: 17px;
+         top: -1px;
+         left: -32px;
+      }
+   }
+
+   &__account {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/settings.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 24px;
+         height: 22px;
+         top: -1px;
+         left: -32px;
+      }
+   }
+
+   &__level {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/level.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 18px;
+         height: 20px;
+         top: -1px;
+         left: -32px;
+      }
+   }
+
+   &__premium {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/premium.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 22px;
+         height: 20px;
+         top: 1px;
+         left: -32px;
+      }
+   }
+
+   &__support {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/support.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 20px;
+         height: 19px;
+         top: -1px;
+         left: -32px;
+      }
+   }
+
+
+   &__out {
+      margin: 20px 0px 7px 0px;
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url(/src/img/controlPanel/out.png);
+         background-repeat: no-repeat;
+         position: absolute;
+         width: 21px;
+         height: 21px;
+         top: -1px;
+         left: -32px;
+      }
+
+      cursor: pointer;
+      &:hover {
+         color: #5D5FEF;
+         transition: none;
+      }
+   }
+}
+
+
+.card {
+   width: 646px;
+   height: 372px;
+
+   background: #F0F0F0;
+   border-radius: 15px;
+
+   margin-left: 30px;
+
+
+   &__wrapper {
+      padding: 16px 21px;
+
+      position: relative;
+      &::before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         background-color: #000000;
+         top: 120px;
+         left: 0px;
+         opacity: 0.1;
+      }
+      &::after {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         background-color: #000000;
+         top: 275px;
+         left: 0px;
+         opacity: 0.1;
+      }
+   }
+
+   &__top {
+      height: 106px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__profil {
+      display: flex;
+      align-items: center;
+   }
+
+   &__img {
+   }
+
+   &__name {
+      margin-left: 22px;
+      
+      @include style(1.25rem, 106%, $font_color_dark, normal);
+      font-weight: 700;
+   }
+
+   &__istop {
+      @include style(0.62rem, 106%, #FFFFFF, normal);
+      background-color: #EF5DA8;
+
+      padding: 5px 9px;
+
+      border-radius: 46.669px;
+   }
+
+   &__respect {
+   }
+
+   &__space {
+   }
+}
+.respect {
+   margin-top: 29px;
+   &__title {
+      @include style(1.187rem, 23px, $font_color_dark, normal);
+      font-weight: 600;
+      display: inline-block;
+      a {
+         margin-left: 6px;
+         @include style(0.75rem, 14px, #EF5DA8, normal);
+         font-weight: 400;
+      }
+   }
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 115px;
+      height: 66px;
+      background: #FFFFFF;
+      border-radius: 15px;
+
+      position: relative;
+
+      @include style(0.81rem, 15px, #868686, normal)
+   }
+
+   &__profile {
+      span {
+         position: relative;
+         left: 9px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         width: 22px;
+         height: 22px;
+         background-color: #A5A6F6;
+         border-radius: 100%;
+         top: 21px;
+         left: 10px;
+      }
+   }
+
+   &__portfolio {
+      span {
+         position: relative;
+         left: 14px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         width: 22px;
+         height: 22px;
+         background-color: #F178B6;
+         border-radius: 100%;
+         top: 21px;
+         left: 10px;
+      }
+   }
+
+   &__fresh {
+      span {
+         position: relative;
+         left: 9px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         width: 22px;
+         height: 22px;
+         background-color: #3AC49F;
+         border-radius: 100%;
+         top: 21px;
+         left: 10px;
+      }
+   }
+
+   &__pro {
+      span {
+         position: relative;
+         left: 9px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         width: 22px;
+         height: 22px;
+         background-color: #5D5FEF;
+         border-radius: 100%;
+         top: 21px;
+         left: 10px;
+      }
+   }
+
+   &__top {
+      span {
+         position: relative;
+         left: 9px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         width: 22px;
+         height: 22px;
+         background-color: #EF5DA8;
+         border-radius: 100%;
+         top: 21px;
+         left: 10px;
+      }
+   }
+
+
+}
+.space {
+   margin-top: 52px;
+   &__title {
+   }
+
+   &__remain {
+   }
+
+   &__range {
+   }
+}
+.diagram {
+
+   &__wrapper {
+   }
+
+   &__count {
+   }
+
+   &__count--current {
+   }
+}
+
+.statistics {
+   grid-column: span 2;
+}

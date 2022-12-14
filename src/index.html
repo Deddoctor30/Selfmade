@@ -13,60 +13,69 @@
          <header class="header">
                <div class="header__logo"><a href="#"><img src="./img/logo/Logo.png" alt="logo"></a></div>
                <div class="header__content">
-                  <div class="header__user-name">Аракелян Д.</div>
+                  <div class="header__user-notice"><a href="#"><img src="./img/header/notice.png" alt="notice"></a></div>
+                  <div class="header__user-name"><a href="#">Аракелян Д.</a></div>
                   <div class="header__user-img"><a href="#"><img src="./img/header/user.png" alt="user-img"></a></div>
                </div>
          </header>
          <main class="main">
             <section class="main__control-panel control-panel">
-               <div class="control-panel__title">Управление</div>
-               <div class="control-panel__items">
-                  <div class="control-panel__item">Портфолио</div>
-                  <div class="control-panel__item">Награды</div>
-                  <div class="control-panel__item">Избранное</div>
-                  <div class="control-panel__item">Аккаунт</div>
-                  <div class="control-panel__item">Уровень</div>
-                  <div class="control-panel__item">Премиум</div>
-                  <div class="control-panel__item">Поддержка</div>
-               </div>
-               <div class="control-panel__out">Выйти</div>
-            </section>
-            <section class="main__card card">
-               <div class="card__top">
-                  <div class="card__img"><img src="./img/header/user.png" alt="user"></div>
-                  <div class="card__name">Давид Аракелян</div>
-                  <div class="card__istop">ТОП</div>
-               </div>
-               <div class="card__respect respect">
-                  <div class="respect__title">SELFMADE RESPECT (SR)</div>
-                  <div class="respect__items">
-                     <div class="respect__item">Профиль</div>
-                     <div class="respect__item">Портфолио</div>
-                     <div class="respect__item">SR ФРЕШ</div>
-                     <div class="respect__item">SR ПРО</div>
-                     <div class="respect__item">SR ТОП</div>
+               <div class="control-panel__wrapper">
+                  <div class="control-panel__title">Управление</div>
+                  <div class="control-panel__items">
+                     <div class="control-panel__item control-panel__portfolio">Портфолио</div>
+                     <div class="control-panel__item control-panel__awards">Награды</div>
+                     <div class="control-panel__item control-panel__favorite">Избранное</div>
+                     <div class="control-panel__item control-panel__account">Аккаунт</div>
+                     <div class="control-panel__item control-panel__level">Уровень</div>
+                     <div class="control-panel__item control-panel__premium">Премиум</div>
+                     <div class="control-panel__item control-panel__support">Поддержка</div>
                   </div>
+                  <div class="control-panel__out">Выйти</div>
                </div>
-               <div class="card__space space">
-                  <div class="space__title">Мой диск</div>
-                  <div class="space__remain">
-                     <span>осталось</span>
-                     <div class="space__range"></div>
+            </section>
+            <div class="main__wrapper">
+               <section class="main__card card">
+                  <div class="card__wrapper">
+                     <div class="card__top">
+                        <div class="card__profil">
+                           <div class="card__img"><img src="./img/card/bigImgUser.png" alt="user"></div>
+                           <div class="card__name">Давид Аракелян</div>
+                        </div>
+                           <div class="card__istop">ТОП</div>
+                     </div>
+                     <div class="card__respect respect">
+                        <div class="respect__title">SELFMADE RESPECT (SR)<a href="#">(Что это?)</a></div>
+                        <div class="respect__items">
+                           <div class="respect__item respect__profile"><span>Профиль</span></div>
+                           <div class="respect__item respect__portfolio"><span>Портфолио</span></div>
+                           <div class="respect__item respect__fresh"><span>SR ФРЕШ</span></div>
+                           <div class="respect__item respect__pro"><span>SR ПРО</span></div>
+                           <div class="respect__item respect__top"><span>SR ТОП</span></div>
+                        </div>
+                     </div>
+                     <div class="card__space space">
+                        <div class="space__title">Мой диск</div>
+                        <div class="space__remain">
+                           <span>осталось</span>
+                           <div class="space__range"></div>
+                        </div>
+                     </div>
                   </div>
-               </div>
-            </section>
-            <section class="main__diagram diagram">
-               <div class="diagram__wrapper"></div>
-               <div class="diagram__count"><span class="diagram__count--current">74</span>/134</div>
-            </section>
-            <div class="section__statistics statistics">
-               <table>
-                  <tr><th>Статистика c <span>01.12.22</span> по <span>08.12.22</span></th><th>Пользователи</th><th>Анонимы</th><th>Всего</th></tr>
-                  <tr><td>Уникальные визиты</td><td>12</td><td>33</td><td>60</td></tr>
-                  <tr><td>Просмотров контактов</td><td>2</td><td>x</td><td>7</td></tr>
-                  <tr><td>Добавлений в избранное</td><td>3</td><td>x</td><td>13</td></tr>
-                  <tr><td>Просмотров портфолио</td><td>22</td><td>87</td><td>156</td></tr>
-               </table>
+               </section>
+               <section class="main__diagram diagram">
+                  <div class="diagram__wrapper"></div>
+                  <div class="diagram__count"><span class="diagram__count--current">74</span>/134</div>
+               </section>
+               <section class="main__statistics statistics">
+                  <table>
+                     <tr><th>Статистика c <span>01.12.22</span> по <span>08.12.22</span></th><th>Пользователи</th><th>Анонимы</th><th>Всего</th></tr>
+                     <tr><td>Уникальные визиты</td><td>12</td><td>33</td><td>60</td></tr>
+                     <tr><td>Просмотров контактов</td><td>2</td><td>x</td><td>7</td></tr>
+                     <tr><td>Добавлений в избранное</td><td>3</td><td>x</td><td>13</td></tr>
+                     <tr><td>Просмотров портфолио</td><td>22</td><td>87</td><td>156</td></tr>
+                  </table>
+               </section>
             </div>
          </main>
          <footer class="footer">

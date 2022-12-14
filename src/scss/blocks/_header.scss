@@ -1,14 +1,22 @@
 .header {
-
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 60px;
    &__logo {
    }
 
    &__content {
+      display: flex;
+      align-items: center;
+   }
+
+   &__user-notice {
+      margin-right: 10px;
    }
 
    &__user-name {
-      font-family: "Gilroy";
-      font-weight: 600;
+      margin-right: 6px;
    }
 
    &__user-img {
