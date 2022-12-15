@@ -21,7 +21,7 @@
          <main class="main">
             <section class="main__control-panel control-panel">
                <div class="control-panel__wrapper">
-                  <div class="control-panel__title">Управление</div>
+                  <div class="control-panel__title active">Управление</div>
                   <div class="control-panel__items">
                      <div class="control-panel__item control-panel__portfolio">Портфолио</div>
                      <div class="control-panel__item control-panel__awards">Награды</div>
@@ -57,28 +57,82 @@
                      <div class="card__space space">
                         <div class="space__title">Мой диск</div>
                         <div class="space__remain">
-                           <span>осталось</span>
-                           <div class="space__range"></div>
+                           <div class="space__inner">
+                              <span>Осталось</span>
+                              <label for="progress"><span id="progress-value">40</span>/100 (mb)</label>
+                              <progress id="progress" max="100" value="60"></progress>
+                              <span class="space__add"><a href="#">Добавить место</a></span>
+                           </div>
                         </div>
                      </div>
                   </div>
                </section>
                <section class="main__diagram diagram">
-                  <div class="diagram__wrapper"></div>
-                  <div class="diagram__count"><span class="diagram__count--current">74</span>/134</div>
+                  <div class="diagram__wrapper">
+                     <h1>Ваш SR</h1>
+                     <div class="diagram__items">
+                        <div class="diagram__count-inner count-inner">
+                           <span class="count-inner__top">+10</span>
+                           <span class="count-inner__main">935</span>
+                           <span class="count-inner__bottom">17849</span>
+                        </div>
+                        <div class="diagram__item">
+                           <div class="pie animate" style="--p:100;--c:#A5A6F6; --w:110px"></div>
+                        </div>
+                        <div class="diagram__item">
+                           <div class="pie animate" style="--p:50;--c:#F178B6; --w:143px"></div>
+                        </div>
+                        <div class="diagram__item">
+                           <div class="pie animate" style="--p:100;--c:#3AC39F; --w:175px"></div>
+                        </div>
+                        <div class="diagram__item">
+                           <div class="pie animate" style="--p:100;--c:#5D5FEF; --w:207px"></div>
+                        </div>
+                        <div class="diagram__item">
+                           <div class="pie animate" style="--p:15;--c:#EF5DA8; --w:239px"></div>
+                        </div>
+                     </div>
+                     <div class="diagram__count"><span class="diagram__count--current">74</span>/134</div>
+                  </div>
                </section>
                <section class="main__statistics statistics">
-                  <table>
-                     <tr><th>Статистика c <span>01.12.22</span> по <span>08.12.22</span></th><th>Пользователи</th><th>Анонимы</th><th>Всего</th></tr>
-                     <tr><td>Уникальные визиты</td><td>12</td><td>33</td><td>60</td></tr>
-                     <tr><td>Просмотров контактов</td><td>2</td><td>x</td><td>7</td></tr>
-                     <tr><td>Добавлений в избранное</td><td>3</td><td>x</td><td>13</td></tr>
-                     <tr><td>Просмотров портфолио</td><td>22</td><td>87</td><td>156</td></tr>
+                  <table class="statistics__table">
+                     <tr>
+                        <th>Статистика c <span>01.12.22</span> по <span>08.12.22</span></th>
+                        <th>Пользователи</th>
+                        <th>Анонимы</th>
+                        <th>Всего</th>
+                     </tr>
+                     <tr>
+                        <td>Уникальные визиты</td>
+                        <td>12</td>
+                        <td>33</td>
+                        <td>60</td>
+                     </tr>
+                     <tr>
+                        <td>Просмотров контактов</td>
+                        <td>2</td>
+                        <td><span>x</span></td>
+                        <td>7</td>
+                     </tr>
+                     <tr><td>Добавлений в избранное</td>
+                        <td>3</td>
+                        <td><span>x</span></td>
+                        <td>13</td>
+                     </tr>
+                     <tr>
+                        <td>Просмотров портфолио</td>
+                        <td>22</td>
+                        <td>87</td>
+                        <td>156</td>
+                     </tr>
                   </table>
                </section>
             </div>
          </main>
-         <footer class="footer">
+      </div>
+      <footer class="footer">
+         <div class="footer__wrapper">
             <div class="footer__top">
                <div class="footer__logo"><img src="./img/footer/logo.png" alt="logo"></div>
                <div class="footer__socials">
@@ -100,8 +154,11 @@
                <div class="footer__bottom-item">ИНН 431207720494 / ОГРНИП 320508100324371</div>
                <div class="footer__bottom-item">Политика конфиденциальности</div>
             </div>
-         </footer>
+            <div class="footer__bg-first"></div>
+            <div class="footer__bg-second"></div>
+         </div>
+      </footer>
    </div>
-   </div>
+   <script src="../dist/js/bundle.js"></script>
 </body>
 </html>

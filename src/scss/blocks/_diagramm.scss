@@ -1,0 +1,138 @@
+.diagram {
+   background: #F0F0F0;
+   border-radius: 15px;
+   @media (max-width: 930px) {
+     margin: 0 auto;
+     margin-bottom: 20px;
+   }
+   
+
+   &__wrapper {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        @include style(1.5em, 24px, #2F2F2F, normal);
+        font-weight: 600;
+    }
+   }
+
+   &__items {
+    position: relative;
+    height: 240px;
+    width: 240px;
+    margin-top: 10px;
+   }
+
+   &__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform-box: content-box;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(180deg);
+   }
+   &__count-inner {
+  }
+  
+   &__count {
+    margin: 20px 0px 28px 0px;
+      @include style(1em, 24px, #2F2F2F, normal);
+      span {
+         font-size: 1.5rem;
+         color: $main_color;
+         font-weight: 700;
+      }
+   }
+
+   &__count--current {
+   }
+   
+}
+
+.count-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__top {
+    @include style(0.75rem, 14px, #EF5DA8, normal);
+    font-weight: 600;
+  }
+
+  &__main {
+    @include style(2.125rem, 41px, #5D5FEF, normal);
+    font-weight: 700;
+  }
+
+  &__bottom {
+    @include style(1rem, 19px, #717171, normal);
+    font-weight: 500;
+  }
+}
+
+
+
+//__________________ Диаграмма_________________
+
+@property --p{
+   syntax: '<number>';
+   inherits: true;
+   initial-value: 0;
+ }
+ 
+ .pie {
+   --p:20;                  // %
+   --b:11px;                // толщина
+   --c:darkred;           // цвет
+   --w:150px;               // диаметр
+   
+   width:var(--w);
+   aspect-ratio:1;
+   position:relative;
+   display:inline-grid;
+   margin:5px;
+   place-content:center;
+   font-size:25px;
+   font-weight:bold;
+   font-family:sans-serif;
+ }
+ .pie:before,
+ .pie:after {
+   content:"";
+   position:absolute;
+   border-radius:50%;
+ }
+ .pie:before {
+   inset:0;
+   background:
+     radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+     conic-gradient(var(--c) calc(var(--p)*1%),rgba(0, 0, 0, 0.1) 0);                                            // Тень маски - последнее значение
+      -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+           mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+ }
+ .pie:after {
+   inset:calc(50% - var(--b)/2);
+   background:var(--c);
+   transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+ }
+ .animate {
+   animation:p 1s .5s both;
+ }
+ .no-round:before {
+   background-size:0 0,auto;
+ }
+ .no-round:after {
+   content:none;
+ }
+ @keyframes p {
+   from{--p:0}
+ }
+ 

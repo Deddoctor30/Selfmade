@@ -2,11 +2,18 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 60px;
+   height: 86px;
+   @media (max-width: 400px) {
+      justify-content: right;
+   }
    &__logo {
+      @media (max-width: 400px) {
+         display: none;
+      }
    }
 
    &__content {
+      flex: 0 1 auto;
       display: flex;
       align-items: center;
    }
@@ -17,6 +24,8 @@
 
    &__user-name {
       margin-right: 6px;
+      @include style(0.875rem, 106%, #2F2F2F, normal);
+      font-weight: 600;
    }
 
    &__user-img {
