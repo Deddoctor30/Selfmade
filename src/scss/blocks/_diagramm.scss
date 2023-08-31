@@ -5,8 +5,6 @@
      margin: 0 auto;
      margin-bottom: 20px;
    }
-   
-
    &__wrapper {
     padding-top: 30px;
     display: flex;
@@ -18,26 +16,20 @@
         font-weight: 600;
     }
    }
-
    &__items {
     position: relative;
     height: 240px;
     width: 240px;
     margin-top: 10px;
    }
-
    &__item {
     position: absolute;
     top: 50%;
     left: 50%;
-
     transform-box: content-box;
     transform-origin: center center;
     transform: translate(-50%, -50%) rotate(180deg);
    }
-   &__count-inner {
-  }
-  
    &__count {
     margin: 20px 0px 28px 0px;
       @include style(1em, 24px, #2F2F2F, normal);
@@ -47,10 +39,6 @@
          font-weight: 700;
       }
    }
-
-   &__count--current {
-   }
-   
 }
 
 .count-inner {
@@ -66,19 +54,15 @@
     @include style(0.75rem, 14px, #EF5DA8, normal);
     font-weight: 600;
   }
-
   &__main {
     @include style(2.125rem, 41px, #5D5FEF, normal);
     font-weight: 700;
   }
-
   &__bottom {
     @include style(1rem, 19px, #717171, normal);
     font-weight: 500;
   }
 }
-
-
 
 //__________________ Диаграмма_________________
 

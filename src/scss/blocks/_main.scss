@@ -3,18 +3,6 @@
    @media (max-width: 1230px) {
       flex-direction: column;
    }
-   &__control-panel {
-   }
-
-   &__card {
-   }
-
-   &__diagram {
-   }
-
-   &__statistics {
-   }
-
    &__wrapper {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
@@ -29,26 +17,21 @@
          display: block;
       }
    }
-
 }
 .control-panel {
    @media (max-width: 1230px) {
       width: 100%;
       margin-bottom: 20px;
    }
-
    &__wrapper {
       padding: 16px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       background: #F0F0F0;
       border-radius: 15px;
-
       position: relative;
-
       @media (max-width: 1230px) {
          flex-direction:inherit;
          justify-content: space-between;
@@ -76,9 +59,6 @@
       border-radius: 15px;
       color: #EF5DA8;
       cursor: pointer;
-      // &:hover {
-      //    background: #ffffff78;
-      // }
       position: relative;
       @media (max-width: 1230px) {
          padding: 10px;
@@ -95,8 +75,6 @@
             left: 40px;
          }
       }
-
-
    }
 
    &__items {
@@ -112,9 +90,7 @@
             margin: 0px;
          }
       }
-
    }
-
    &__item {
       display: flex;
       justify-content: left;
@@ -131,7 +107,6 @@
          justify-content: center;
       }
    }
-
    &__portfolio {
       @media (min-width:1231px) {
          position: relative;
@@ -150,7 +125,6 @@
          display: none;
       }
    }
-
    &__awards {
       @media (min-width:1231px) {
          position: relative;
@@ -170,7 +144,6 @@
       }
 
    }
-
    &__favorite {
       @media (min-width:1231px) {
          position: relative;
@@ -189,7 +162,6 @@
          display: none;
       }
    }
-
    &__account {
       @media (min-width:1231px) {
          position: relative;
@@ -208,7 +180,6 @@
          display: none;
       }
    }
-
    &__level {
       @media (min-width:1231px) {
          position: relative;
@@ -227,7 +198,6 @@
          display: none;
       }
    }
-
    &__premium {
       @media (min-width:1231px) {
          position: relative;
@@ -246,7 +216,6 @@
          display: none;
       }
    }
-
    &__support {
       @media (min-width:1231px) {
          position: relative;
@@ -265,8 +234,6 @@
          display: none;
       }
    }
-
-
    &__out {
       padding: 16px 70px 16px 69px;
       border-radius: 15px;
@@ -277,7 +244,6 @@
          &:hover {
             color: $main_color;
             transition: none;
-            // background: #ffffff78;
          }
          &::before {
             content: "";
@@ -290,7 +256,6 @@
             left: 35px;
          }
       }
-
       cursor: pointer;
       &:hover {
          color: $main_color;
@@ -298,12 +263,9 @@
       }
    }
 }
-
-
 .card {
    background: #F0F0F0;
    border-radius: 15px;
-
    &__wrapper {
       padding: 16px 21px;
       position: relative;
@@ -340,7 +302,6 @@
          @media(max-width: 333px) {
             top: 355px;
          }
-         
       }
       @media (max-width: 930px) {
          margin-bottom: 20px;
@@ -349,42 +310,27 @@
          padding: 16px 16px;
       }
    }
-
    &__top {
       margin-bottom: 55px;
       display: flex;
       align-items: center;
       justify-content: space-between;
    }
-
    &__profil {
       display: flex;
       align-items: center;
    }
-
-   &__img {
-   }
-
    &__name {
       margin-left: 22px;
       
       @include style(1.25rem, 106%, $font_color_dark, normal);
       font-weight: 700;
    }
-
    &__istop {
       @include style(0.62rem, 106%, #FFFFFF, normal);
       background-color: #EF5DA8;
-
       padding: 5px 9px;
-
       border-radius: 46.669px;
-   }
-
-   &__respect {
-   }
-
-   &__space {
    }
 }
 .respect {
@@ -399,14 +345,12 @@
          font-weight: 400;
       }
    }
-
    &__items {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
 
    }
-
    &__item {
       margin: 0 3px;
       margin-top: 10px;
@@ -419,7 +363,6 @@
       border-radius: 15px;
       position: relative;
       @include style(0.81rem, 15px, #868686, normal);
-
       @media(max-width: 446px) {
          height: 36px;
       }
@@ -427,7 +370,6 @@
 
       }
    }
-
    &__profile {
       span {
          position: relative;
@@ -447,7 +389,6 @@
          }
       }
    }
-
    &__portfolio {
       span {
          position: relative;
@@ -467,7 +408,6 @@
          }
       }
    }
-
    &__fresh {
       span {
          position: relative;
@@ -487,7 +427,6 @@
          }
       }
    }
-
    &__pro {
       span {
          position: relative;
@@ -507,7 +446,6 @@
          }
       }
    }
-
    &__top {
       span {
          position: relative;
@@ -527,22 +465,17 @@
          }
       }
    }
-
-
 }
 .space {
    margin-top: 52px;
    &__title {
       @include style(1.18rem, 23px, $font_color_dark, normal);
       font-weight: 600;
-      
    }
-
    &__inner {
       position: relative;
 
    }
-
    &__remain {
       margin-top: 13px;
       @include style(1em, 19px, #868686, normal);
@@ -550,7 +483,6 @@
       label {
          @include style(1em, 19px, #2F2F2F, normal);
       }
-      
       progress {
          margin-left: 12px;
          height: 15px;
@@ -564,12 +496,10 @@
             margin: 0px;
          }
       }
-
       progress::-webkit-progress-bar {
          background-color: #C7C8FF;
          border-radius: 63px;
       }
-
       progress::-webkit-progress-value {
          background-color: $main_color;
          border-radius: 63px;
@@ -592,20 +522,12 @@
          display: none;
       }
    }
-
-   &__range {
-   }
-
-   &__progress {
-   }
-
 }
 
 .statistics {
    grid-column: span 2;
    background: #F0F0F0;
    border-radius: 15px;
-
    &__table {
       border-collapse: collapse;
       text-align: center;

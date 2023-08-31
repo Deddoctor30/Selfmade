@@ -161,6 +161,7 @@ html, body {
   letter-spacing: normal;
   font-weight: 600;
 }
+
 .main {
   display: flex;
 }
@@ -546,6 +547,7 @@ html, body {
   padding: 5px 9px;
   border-radius: 46.669px;
 }
+
 .respect {
   margin-top: 29px;
 }
@@ -760,6 +762,7 @@ html, body {
     display: none;
   }
 }
+
 .statistics {
   grid-column: span 2;
   background: #F0F0F0;
@@ -891,6 +894,7 @@ html, body {
   color: #5D5FEF;
   font-weight: 700;
 }
+
 .count-inner {
   display: flex;
   flex-direction: column;
@@ -965,8 +969,7 @@ html, body {
 }
 
 .animate {
-  -webkit-animation: p 1s 0.5s both;
-          animation: p 1s 0.5s both;
+  animation: p 1s 0.5s both;
 }
 
 .no-round:before {
@@ -975,12 +978,6 @@ html, body {
 
 .no-round:after {
   content: none;
-}
-
-@-webkit-keyframes p {
-  from {
-    --p:0;
-  }
 }
 
 @keyframes p {

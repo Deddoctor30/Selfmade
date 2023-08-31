@@ -1,6 +1,5 @@
 .footer {
    position: relative;
-
    &__wrapper {
       max-width: 1120px;
       margin: 0 auto;
@@ -18,23 +17,17 @@
          justify-content: center;
       }
    }
-
    &__logo {
       @media(max-width: 400px) {
          display: none;
       }
    }
-
    &__socials {
       display: flex;
       &>*:not(:last-child){
          margin: 0px 19px 0px 0px;
       }
    }
-
-   &__social {
-   }
-
    &__helps {
       display: flex;
       flex-wrap: wrap;
@@ -49,11 +42,9 @@
          }
       }
    }
-
    &__help {
       flex: 0 1 auto;
    }
-
    &__bottom-items {
       display: flex;
       flex-wrap: wrap;
@@ -69,11 +60,9 @@
       }
 
    }
-
    &__bottom-item {
       flex: 0 1 auto;
    }
-
    &__bg-first {
       background-color: $main_color;
       width: 100%;
@@ -90,7 +79,6 @@
       }
 
    }
-
    &__bg-second {
       background-color: #5556D3;
       width: 100%;
